@@ -6,7 +6,6 @@ from PyQt6.QtWidgets import (
     QComboBox,
     QPushButton,
     QLabel, 
-    QMessageBox,
     QTableWidgetItem,
     QHeaderView
 ) 
