@@ -45,6 +45,7 @@ It allows you to manage tasks, save progress, and filter them by date using a cl
 - `requirements.txt` Dependencies
 - `README.md` Project Documentation
 - `data.json` JSON file for storing task (auto-generated)
+- `custom_widget.py` Collection of custom widgets
 
 
 ## 📄 License Notice
