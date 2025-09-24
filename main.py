@@ -122,7 +122,7 @@ class Main(QWidget, Ui_Form):
             h_box = QHBoxLayout()
             label = QLabel(task)
             combo_box = StyledComboBox(self)
-            combo_box.addItems(["In progress", "Done"])
+            combo_box.addItems(["Open", "In progress", "Done"])
             combo_box.setCursor(Qt.CursorShape.PointingHandCursor)
             combo_box.currentIndexChanged.connect(self.check_if_all_done)
             self._combo_box_ref.append(combo_box)
