@@ -1,5 +1,6 @@
 from PyQt6.QtWidgets import QComboBox, QMessageBox
 from PyQt6.QtCore import Qt
+from typing import override
 
 class StyledComboBox(QComboBox):
     def __init__(self, parent=None):
@@ -42,6 +43,10 @@ class StyledComboBox(QComboBox):
                 color: black;
             }
         """)
+    
+    @override
+    def wheelEvent(self, e):
+        e.ignore()
 
 class CustomMessageBox(QMessageBox):
     def __init__(self, icon: QMessageBox.Icon, title: str, text: str, parent=None):
